@@ -1,0 +1,39 @@
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #173D33cc;
+    backdrop-filter: blur(25px);
+    color: white;
+    /* фоновий колір бургер-меню */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* висота на весь екран */
+    width: 100%;
+    /* ширина на весь екран */
+    padding: 20px;
+    /* можливо, вам треба додати відступи чи інші стилі */
+    z-index: 1000;
+    /* значення може бути іншим, але важливо, щоб бургер-меню було видно навіть поверх інших елементів */
+    /* display: none; */
+    visibility: hidden;
+    display: block;
+    opacity: 0;
+    /* Початковий стан закритого бургер-меню */
+}
+
+.burger-menu.open {
+    /* Стилі для відкритого бургер-меню */
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.burger-nav {
+    display: flex;
+    flex-direction: column;
+}
